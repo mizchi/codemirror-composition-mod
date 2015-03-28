@@ -5,7 +5,7 @@
   "main": "lib/codemirror-composition-mod.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "coffee -o lib -c src/codemirror-composition-mod.coffee;"
+    "prepublish": "coffee -o lib -c src/codemirror-composition-mod.coffee; sassc src/codemirror-composition-mod.scss > lib/codemirror-composition-mod.css"
   },
   "repository": {
     "type": "git",
