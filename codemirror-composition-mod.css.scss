@@ -1,32 +1,25 @@
-@import "compass/css3/transition";
-@import "compass/css3/box-shadow";
+.cm-in-composition {
+  .CodeMirror-input-wrapper {
+    overflow: visible !important;
+    textarea {
+      resize: none;
+      background-color: transparent;
+      border: none;
+      font-size: 16px !important;
 
-.CodeMirror-input-wrapper {
-  overflow: visible !important;
-
-  textarea {
-    resize: none;
+      min-width: 500px;
+      z-index: 10;
+      top: -2px;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      transition: none;
+    }
   }
-}
-.CodeMirror-input-wrapper.in-composition {
-  textarea {
-    background-color: transparent;
-    min-width: 500px;
-    height: 1.5em !important;
-    font-family: inherit !important;
-    font-size: 14px !important;
-    border: none;
-    z-index: 10;
-    top: -2px;
-
-    @include box-shadow(none);
-    @include transition(none);
-  }
-
-  & ~ .CodeMirror-scroll .CodeMirror-cursor {
+  .CodeMirror-scroll .CodeMirror-cursor {
     display: none;
   }
 }
-.CodeMirror-text-in-composition {
+.cm-text-in-composition {
   color: transparent;
 }
