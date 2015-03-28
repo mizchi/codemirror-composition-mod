@@ -1,0 +1,20 @@
+{
+  "name": "codemirror-composition-mod",
+  "version": "5.0.0",
+  "description": "CodeMirror Composition Mod",
+  "main": "codemirror-composition-mod.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "coffee -o lib -c src/codemirror-composition-mod.coffee;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mizchi/codemirror-composition-mod.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizchi/codemirror-composition-mod/issues"
+  },
+  "homepage": "https://github.com/mizchi/codemirror-composition-mod"
+}
